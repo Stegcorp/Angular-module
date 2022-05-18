@@ -4,11 +4,15 @@ import {AppComponent} from './components/app/app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {UsersComponent} from './components/users/users.component';
 import {RouterModule, Routes} from '@angular/router';
-import { SingleUserComponent } from './components/single-user/single-user.component';
+import {SingleUserComponent} from './components/single-user/single-user.component';
 
 const routes: Routes = [
-  {path: 'users', component: UsersComponent},
-  {path: 'users/:id' , component: SingleUserComponent}
+  {
+    path: 'users', component: UsersComponent,
+    children: [
+      {path: 'details/:id', component: SingleUserComponent}
+    ]
+  }
 ];
 
 @NgModule({
