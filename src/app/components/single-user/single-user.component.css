@@ -1,0 +1,12 @@
+.ov{
+  color: #0e0000;
+  background: burlywood;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+p{
+  margin: 5px;
+  margin-left: 20px;
+}

@@ -1,0 +1,4 @@
+<div *ngFor="let user of users" >{{user.id}} {{user.name}}
+  <button class="btn"><a routerLink="details/{{user.id}}" >details of user</a></button></div>
+<hr>
+<router-outlet></router-outlet>

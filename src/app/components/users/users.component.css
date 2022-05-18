@@ -1,0 +1,12 @@
+.btn{
+  background: burlywood;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: #0e0000;
+}
+div{
+  margin-bottom: 5px;
+}
